@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUD Operation</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <table>
+        <tr>
+            <!-- Html form for CRUD Operation -->
+            <td>
+                <form autocomplete="off" onsubmit="event.preventDefault();onFormSubmit();">
+                    <div>
+                        <label for="">Full Name</label>
+                        <input type="text" name="fullname" id="fullname">
+                    </div>
+
+                    <div>
+                        <label for="">EMP Code</label>
+                        <input type="text" name="empcode" id="empcode">
+                    </div>
+
+                    <div>
+                        <label for="">Salary</label>
+                        <input type="text" name="salary" id="salary">
+                    </div>
+
+                    <div>
+                        <label for="">City</label>
+                        <input type="text" name="city" id="city">
+                    </div>
+
+                    <div class="form-action-buttons">
+                        <input type="submit" value="Submit">
+                    </div>
+                </form>
+            </td>
+            <!-- Table to list all records -->
+            <td>
+                <table class="list" id="employeeList">
+                    <thead>
+                        <tr>
+                            <th>Full Name</th>
+                            <th>EMP Code</th>
+                            <th>Salary</th>
+                            <th>City</th>
+                            <th>Edit & Delete</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+
+                    </tbody>
+                </table>
+            </td>
+        </tr>
+    </table>
+
+
+    <script src="main.js"></script>
+</body>
+
+</html>
